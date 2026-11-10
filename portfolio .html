@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shankhadip Karmakar | Portfolio</title>
+<style>
+  :root {
+    --blue: #3a6ea5;
+    --text: #333;
+    --muted: #666;
+    --line: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: #fff;
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 60px;
+  }
+  /* Left column */
+  .profile { text-align: left; }
+  .profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 24px;
+    border: 1px solid var(--line);
+  }
+  .profile h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--blue);
+    margin: 0 0 6px;
+  }
+  .profile .role { color: var(--muted); margin: 0 0 18px; }
+  .profile p.bio { font-size: 15px; color: var(--muted); margin: 0 0 18px; }
+  .profile .links a {
+    display: block;
+    color: var(--blue);
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  .profile .links a:hover { text-decoration: underline; }
+
+  /* Right column */
+  .content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 24px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .content h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin: 36px 0 14px;
+    color: var(--text);
+  }
+  .project { margin-bottom: 30px; }
+  .project h4 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .project h4 a { color: var(--blue); text-decoration: none; }
+  .project h4 a:hover { text-decoration: underline; }
+  .project p { margin: 0 0 8px; font-size: 15px; color: var(--muted); }
+  .tags { font-size: 13px; color: var(--muted); }
+  .tags span {
+    display: inline-block;
+    background: #f1f5f9;
+    padding: 2px 10px;
+    border-radius: 999px;
+    margin: 0 6px 6px 0;
+  }
+  .skills p { margin: 0 0 8px; font-size: 15px; }
+  .skills strong { font-weight: 600; }
+  .entry { margin-bottom: 22px; }
+  .entry .title { font-weight: 600; }
+  .entry .meta { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+  .entry p { margin: 0; font-size: 15px; color: var(--muted); }
+
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+    color: #999;
+    font-size: 13px;
+  }
+
+  @media (max-width: 800px) {
+    .wrap { grid-template-columns: 1fr; gap: 40px; padding: 40px 20px; }
+    .profile img { width: 180px; height: 180px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <aside class="profile">
+    <img src="photo.jpg" alt="Shankhadip Karmakar">
+    <h1>Shankhadip Karmakar</h1>
+    <p class="role">Software Developer</p>
+    <p class="bio">Software developer building practical, user-centric applications. Early experience at an early-stage startup, with a focus on backend development and clean, maintainable code. B.Tech CSE (AI and ML) student at GKCIET, Malda.</p>
+    <div class="links">
+      <a href="mailto:llvcx080@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/shankhadip-k">LinkedIn</a>
+      <a href="https://github.com/xcodexavier-hue">GitHub</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <h2>Portfolio</h2>
+
+    <h3>Projects</h3>
+
+    <div class="project">
+      <h4><a href="https://github.com/xcodexavier-hue">AI-Powered Agricultural Dashboard</a></h4>
+      <p>A web app that shows crop price forecasts and weather analytics to help farmers plan. Includes a Python model for crop yield prediction.</p>
+      <div class="tags"><span>React</span><span>Node.js</span><span>Python</span><span>TensorFlow</span><span>Docker</span><span>AWS</span></div>
+    </div>
+
+    <div class="project">
+      <h4><a href="https://github.com/xcodexavier-hue">Drin Water Time2Time</a></h4>
+      <p>A SaaS application with secure login, role-based access, and a relational database.</p>
+      <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span></div>
+    </div>
+
+    <h3>Experience</h3>
+
+    <div class="entry">
+      <div class="title">Software Developer (Intern)</div>
+      <div class="meta">Early-stage startup · Remote</div>
+      <p>Worked on backend features and automated testing for an early-stage product.</p>
+    </div>
+
+    <div class="entry">
+      <div class="title">AI Language Trainer</div>
+      <div class="meta">Outlier AI · Remote · July 2026 to Present</div>
+      <p>Evaluate and refine large language model outputs by writing prompt-response pairs and giving structured feedback.</p>
+    </div>
+
+    <div class="entry">
+      <div class="title">IITB Campus Ambassador</div>
+      <div class="meta">IIT Bombay · 2025 to 2026</div>
+      <p>Organized technical workshops and events, and connected the institute with the student community.</p>
+    </div>
+
+    <h3>Skills</h3>
+    <div class="skills">
+      <p><strong>Languages:</strong> Python, JavaScript, TypeScript, C++, Java, SQL</p>
+      <p><strong>Frontend:</strong> React.js, Next.js, Tailwind CSS, HTML, CSS</p>
+      <p><strong>Backend:</strong> Node.js, Express.js, REST APIs, GraphQL</p>
+      <p><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL, Firebase</p>
+      <p><strong>Tools:</strong> Git, GitHub Actions, Docker, AWS, Postman</p>
+    </div>
+
+    <h3>Education</h3>
+    <div class="entry">
+      <div class="title">B.Tech, Computer Science and Engineering (AI and ML)</div>
+      <div class="meta">GKCIET, Malda (MAKAUT) · 2028</div>
+    </div>
+  </main>
+
+</div>
+
+<footer>
+  Built with plain HTML and CSS.
+</footer>
+
+</body>
+</html>
