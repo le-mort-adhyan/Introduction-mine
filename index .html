@@ -3,10 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CHANGE: the browser tab title, if you want something different -->
 <title>Shankhadip Karmakar | Portfolio</title>
+
 <style>
+  /* CHANGE (optional): OpenDyslexic font. Delete this block to use the default font. Needs a fonts/ folder with both .woff files. */
+  @font-face {
+    font-family: "OpenDyslexic";
+    src: url("fonts/OpenDyslexic-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "OpenDyslexic";
+    src: url("fonts/OpenDyslexic-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+
   :root {
-    --blue: #3a6ea5;
+    --blue: #3a6ea5;      /* CHANGE (optional): accent color */
     --text: #333;
     --muted: #666;
     --line: #e5e5e5;
@@ -14,7 +30,8 @@
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    /* CHANGE (optional): use "OpenDyslexic" first, or any other font name */
+    font-family: "OpenDyslexic", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     color: var(--text);
@@ -28,6 +45,7 @@
     grid-template-columns: 300px 1fr;
     gap: 60px;
   }
+
   /* Left column */
   .profile { text-align: left; }
   .profile img {
@@ -70,11 +88,7 @@
     color: var(--text);
   }
   .project { margin-bottom: 30px; }
-  .project h4 {
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0 0 6px;
-  }
+  .project h4 { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
   .project h4 a { color: var(--blue); text-decoration: none; }
   .project h4 a:hover { text-decoration: underline; }
   .project p { margin: 0 0 8px; font-size: 15px; color: var(--muted); }
@@ -112,14 +126,25 @@
 <div class="wrap">
 
   <aside class="profile">
+    <!-- CHANGE: the photo file name. It must be in the same folder as index.html -->
     <img src="photo.jpg" alt="Shankhadip Karmakar">
+
+    <!-- CHANGE: your name -->
     <h1>Shankhadip Karmakar</h1>
+
+    <!-- CHANGE: your role title -->
     <p class="role">Software Developer</p>
+
+    <!-- CHANGE: your short bio -->
     <p class="bio">Software developer building practical, user-centric applications. Early experience at an early-stage startup, with a focus on backend development and clean, maintainable code. B.Tech CSE (AI and ML) student at GKCIET, Malda.</p>
+
     <div class="links">
+      <!-- CHANGE: your email address -->
       <a href="mailto:llvcx080@gmail.com">Email</a>
+      <!-- CHANGE: your LinkedIn URL -->
       <a href="https://linkedin.com/in/shankhadip-k">LinkedIn</a>
-      <a href="https://github.com/">GitHub</a>
+      <!-- CHANGE: your GitHub profile URL (use the account that owns your repos) -->
+      <a href="https://github.com/le-mort-adhyan">GitHub</a>
     </div>
   </aside>
 
@@ -129,39 +154,64 @@
     <h3>Projects</h3>
 
     <div class="project">
-      <h4><a href="https://github.com/">AI-Powered Agricultural Dashboard</a></h4>
+      <!-- CHANGE: the link to this project's repo -->
+      <h4><a href="https://github.com/le-mort-adhyan/loan-approval-explainable-ai">Explainable Loan Approval</a></h4>
+      <!-- CHANGE: a one-line description of this project -->
+      <p>A loan approval classifier that compares feature-selection methods and explains each decision with interpretable rules.</p>
+      <!-- CHANGE: the tools used in this project -->
+      <div class="tags"><span>Python</span><span>scikit-learn</span><span>Decision Tree</span><span>Pandas</span></div>
+    </div>
+
+    <div class="project">
+      <!-- CHANGE: the link to this project's repo -->
+      <h4><a href="https://github.com/xcodexavier-hue">AI-Powered Agricultural Dashboard</a></h4>
+      <!-- CHANGE: a one-line description of this project -->
       <p>A web app that shows crop price forecasts and weather analytics to help farmers plan. Includes a Python model for crop yield prediction.</p>
+      <!-- CHANGE: the tools used in this project -->
       <div class="tags"><span>React</span><span>Node.js</span><span>Python</span><span>TensorFlow</span><span>Docker</span><span>AWS</span></div>
     </div>
 
     <div class="project">
-      <h4><a href="https://github.com/">Drin Water Time2Time</a></h4>
+      <!-- CHANGE: the link to this project's repo -->
+      <h4><a href="https://github.com/xcodexavier-hue">Drin Water Time2Time</a></h4>
+      <!-- CHANGE: a one-line description of this project -->
       <p>A SaaS application with secure login, role-based access, and a relational database.</p>
+      <!-- CHANGE: the tools used in this project -->
       <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Prisma</span></div>
     </div>
 
     <h3>Experience</h3>
 
     <div class="entry">
+      <!-- CHANGE: your job title and company -->
       <div class="title">Software Developer (Intern)</div>
+      <!-- CHANGE: location and dates -->
       <div class="meta">Early-stage startup · Remote</div>
+      <!-- CHANGE: one line about this role -->
       <p>Worked on backend features and automated testing for an early-stage product.</p>
     </div>
 
     <div class="entry">
+      <!-- CHANGE: your job title -->
       <div class="title">AI Language Trainer</div>
+      <!-- CHANGE: company, location, and dates -->
       <div class="meta">Outlier AI · Remote · July 2026 to Present</div>
+      <!-- CHANGE: one line about this role -->
       <p>Evaluate and refine large language model outputs by writing prompt-response pairs and giving structured feedback.</p>
     </div>
 
     <div class="entry">
+      <!-- CHANGE: your role title -->
       <div class="title">IITB Campus Ambassador</div>
+      <!-- CHANGE: organization, location, and dates -->
       <div class="meta">IIT Bombay · 2025 to 2026</div>
+      <!-- CHANGE: one line about this role -->
       <p>Organized technical workshops and events, and connected the institute with the student community.</p>
     </div>
 
     <h3>Skills</h3>
     <div class="skills">
+      <!-- CHANGE: the skills you want to show. Edit, add, or remove lines. -->
       <p><strong>Languages:</strong> Python, JavaScript, TypeScript, C++, Java, SQL</p>
       <p><strong>Frontend:</strong> React.js, Next.js, Tailwind CSS, HTML, CSS</p>
       <p><strong>Backend:</strong> Node.js, Express.js, REST APIs, GraphQL</p>
@@ -171,6 +221,7 @@
 
     <h3>Education</h3>
     <div class="entry">
+      <!-- CHANGE: your degree, college, and expected graduation year -->
       <div class="title">B.Tech, Computer Science and Engineering (AI and ML)</div>
       <div class="meta">GKCIET, Malda (MAKAUT) · 2028</div>
     </div>
@@ -179,6 +230,7 @@
 </div>
 
 <footer>
+  <!-- CHANGE: footer text, or delete this line -->
   Built with plain HTML and CSS.
 </footer>
 
